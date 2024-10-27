@@ -1,0 +1,45 @@
+.videos-page {
+  min-height: 100vh;
+  padding: $spacing-8;
+  
+  &__content {
+    display: flex;
+    gap: $spacing-8;
+    
+    &--split {
+      .videos-page__grid {
+        width: 33.333%;
+      }
+      
+      .videos-page__player {
+        width: 66.666%;
+      }
+    }
+  }
+  
+  &__grid {
+    width: 100%;
+  }
+  
+  &__player {
+    background-color: $color-white;
+    border-radius: $radius-xl;
+    box-shadow: $shadow-md;
+    overflow: hidden;
+  }
+  
+  &__url-container {
+    display: flex;
+    align-items: center;
+    gap: $spacing-4;
+    margin-top: $spacing-4;
+    
+    &-input {
+      flex: 1;
+      background-color: rgba($color-text, 0.05);
+      padding: $spacing-2 $spacing-4;
+      border-radius: $radius-lg;
+      position: relative;
+    }
+  }
+}

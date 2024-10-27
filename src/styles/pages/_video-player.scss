@@ -1,0 +1,61 @@
+.video-player-page {
+  min-height: 100vh;
+  padding: $spacing-8;
+  
+  &__back {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-2;
+    color: $color-text-light;
+    margin-bottom: $spacing-6;
+    transition: color $transition-base;
+    
+    &:hover {
+      color: $color-text;
+    }
+  }
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+    
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+    }
+  }
+  
+  &__main {
+    flex: 1;
+  }
+  
+  &__sidebar {
+    width: 100%;
+    
+    @media (min-width: $breakpoint-lg) {
+      width: 320px;
+    }
+  }
+  
+  &__questions {
+    background-color: $color-white;
+    border-radius: $radius-xl;
+    box-shadow: $shadow-md;
+    padding: $spacing-6;
+    position: sticky;
+    top: $spacing-8;
+    
+    &-list {
+      margin-top: $spacing-4;
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-4;
+    }
+    
+    &-item {
+      background-color: rgba($color-text, 0.05);
+      padding: $spacing-4;
+      border-radius: $radius-lg;
+    }
+  }
+}

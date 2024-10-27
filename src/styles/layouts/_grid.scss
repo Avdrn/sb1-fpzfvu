@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  gap: $spacing-6;
+  
+  &--videos {
+    grid-template-columns: 1fr;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

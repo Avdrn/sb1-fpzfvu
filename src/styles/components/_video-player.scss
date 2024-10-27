@@ -1,0 +1,34 @@
+.video-player {
+  &__container {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    border-radius: $radius-xl $radius-xl 0 0;
+  }
+  
+  &__loading {
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color-text, 0.05);
+  }
+  
+  &__error {
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color-error, 0.05);
+    color: $color-error;
+    text-align: center;
+    padding: $spacing-4;
+  }
+  
+  &__info {
+    padding: $spacing-6;
+    background-color: $color-white;
+    border-radius: 0 0 $radius-xl $radius-xl;
+  }
+}

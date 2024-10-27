@@ -1,0 +1,41 @@
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.transition {
+  transition: all $transition-base;
+}
+
+.error-message {
+  color: $color-error;
+  background-color: $color-error-light;
+  padding: $spacing-4;
+  border-radius: $radius-lg;
+  margin-top: $spacing-4;
+}
